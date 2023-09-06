@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins:ital,wght@1,300&display=swap');
+
+body{
+    --dot-bg: black;
+    --dot-color: white;
+    --dot-size: 1px;
+    --dot-space: 22px;
+    background:
+    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+
+    padding: 10px 5px 20px 20px;
+    margin: 10px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar{
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.links{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+li{
+    padding: 10px;
+    margin-left:10px;
+    cursor: pointer;
+}
+
+#cover{
+    display: flex;
+    height: 500px;
+}
+
+.cover-info h2{
+    font-size: 40px;
+}
+
+.cover-info{
+    width: 50%;
+}
+
+svg{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.cover-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-image img{
+    width: auto;
+    height: 300px;
+    border-radius: 300px;
+}
+
+span{
+    color: #279EFF;
+}
+
+#profile{
+    background-color: grey;
+    height: 500px;
+    margin: auto;
+    width: 80%;
+    border-radius: 30px;
+}
+
+.card{
+    height: 450px;
+    width: 90%;
+    margin: 25px 20px;
+    padding: 20px;
+    display: flex;
+}
+
+.card-img img{
+    height: 450px;
+    width: 350px;
+    border-radius: 50px;
+    box-shadow: 5px 10px 8px 10px rgb(53, 48, 48);
+    border: none;
+}
+
+.card-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    color: black;
+}
+
+.card-details h2{
+    font-size: 25px;
+}
+
+label{
+    font-weight: 600;
+    font-size: 20px;
+}
